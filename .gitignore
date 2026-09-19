@@ -1,0 +1,40 @@
+# Dependencias (se reinstalan con npm install / pip install)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Builds
+dist/
+dist-ssr/
+backend/dist/
+frontend/dist/
+
+# Entornos de Python
+ml/.venv/
+ml/venv/
+ml/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Variables de entorno con datos sensibles (contraseñas, JWT secret, etc.)
+# Se sube .env.example como plantilla, nunca el .env real.
+.env
+backend/.env
+frontend/.env
+
+# Datos reales de pacientes: NUNCA deben ir al repositorio (nombres,
+# cédulas y montos reales extraídos de planillas verdaderas del hospital).
+# El código para importarlos sí va en el repo, los datos reales no.
+/ejemplos/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.sw?
